@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="pageBackground">
+    
+    <div id="logoHeadingLogout">
+        <div id="logoHeadingProduct">
+            <div id="logoHeading">
+                <img src="images/Logo1.png" alt="A" id="logo">
+                <h2 id="homepageHeading" class="pageHeading">AliciaCloud</h2>
+            </div>
+            <h2 id="notesHeading">Notes</h2>
+        </div>
+    </div>
+    <div class="mainContent">
+        <div id="leftColumn">
+            <div id="searchNewNote" class="topOfColumns">
+                <div id="searchSearchIcon">
+                    <img src="images/searchIcon.png" alt="S" id="searchIcon">
+                    <input placeholder= "Search all notes" id="search">
+                </div>
+                <button title="Create new note" class="button" id="newNote"></button>
+            </div>
+
+            
+            <ul id="userNotesList">
+                <li class="noteListItem" id="note2">
+                    <span class="title">New Note</span> <br>
+                    <div class="dateShorthand">
+                        <span class="date">07/08/2026</span>
+                        <span class="user-inputShorthand">This is a new note</span> <br>
+                    </div>
+                </li>
+                <li class="noteListItem" id="note1">
+                    <span class="title">New Note</span> <br>
+                    <div class="dateShorthand">
+                        <span class="date">07/08/2026</span>
+                        <span class="user-inputShorthand">This is a new note and I'm going to make it longer than the box to see if it overflows so i can see if my overflow works</span> <br>
+                    </div>
+                </li>
+                <li class="noteListItem">
+                    <span class="title"></span> <br>
+                    <div class="dateShorthand">
+                        <span class="date"></span>
+                        <span class="user-inputShorthand"></span> <br>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+        <div id="rightColumn">
+            <div id="notesOptions" class="topOfColumns">
+                    <button title="Delete Note" id="deleteNote" class="optionsBar button"></button>
+                    <button title="Save Note" id="saveNote" class="optionsBar button"></button>
+            </div>
+            <div id="actualNote">
+                <input id="titleNote" class="noteArea" placeholder="Note title...">
+                <textarea id="textAreaNote" class="noteArea" placeholder="What do you want to write?"></textarea>
+            </div>
+        </div>
+    </div>
+    
+
+
+<script src="script.js"></script> 
+</body>
+</html>

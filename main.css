@@ -1,0 +1,267 @@
+/*styling for every page*/
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.pageBackground{
+    background-color: rgb(185, 185, 185);
+    height: 100vh;
+}
+
+.pageHeading{
+    text-align: left;
+    margin-left: 3px;
+    margin-right: 10px;
+    color: rgb(35, 36, 36);
+}
+
+#notesHeading{
+    color: rgb(214, 176, 52);
+    font-weight: 450;
+    text-shadow: 1px 1px rgb(35, 36, 36);
+    margin-left: 0;
+}
+
+#logo{
+    height: 30px;
+}
+
+#logoHeading{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#logoHeadingProduct{
+    display: flex;
+}
+
+#logoHeadingLogout{
+    display: flex;
+    align-items: center;
+    background-color: rgb(150, 150, 150);
+    height: 60px;
+    box-shadow: 0 0 20px rgb(75, 75, 75);
+}
+
+
+.button{
+    font-size: large;
+    color: rgb(35, 36, 36);
+    box-shadow: 0 0 20px rgb(130, 130, 130);
+
+}
+
+.button:hover{
+    background-color: rgb(150, 150, 150);
+}
+
+.button:active{
+    background-color: rgb(130, 130, 130);
+}
+
+/*styling for index.html*/
+
+.mainContent{
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
+.topOfColumns{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+#newNote{
+    margin: 10px;
+    background-image: url(images/NewNote.png);
+    background-size: contain;
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 44px;
+    width: 44px;
+    border: 0px;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+#search{
+    border-radius: 15px;
+    border: 0px;
+    height: 44px;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#search:focus{
+    border: none;
+    outline: none;
+}
+
+#searchIcon{
+    height: 20px;
+    margin-left: 10px;
+}
+
+#searchSearchIcon{
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 0 20px rgb(130, 130, 130);
+}
+
+
+#leftColumn{
+    border-right: 2px;
+    border-right-color: rgb(130, 130, 130);
+    border-right-style: solid;
+    width: 35%;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 10px;
+    overflow-y: auto;
+}
+
+
+
+#noteTitle{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#userNotesList{
+    list-style: none;
+    padding: 0px;
+    margin-top: 8px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-right: 10px;
+    height: 75%;
+    box-shadow: 0 0 20px rgb(130, 130, 130);
+}
+
+#userNotesList li{
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+#userNotesList li:hover{
+    background-color: rgb(185, 185, 185);
+}
+
+.title{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.date{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.dateShorthand{
+    display: flex;
+    width: 100%;
+}
+.user-inputShorthand{
+    margin-left: 5px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#rightColumn{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+#notesOptions{
+    flex-shrink: 0;
+    
+}
+.optionsBar{
+    height: 44px;
+    width: 44px;
+    margin: 10px;
+    padding-top: 5px;
+    background-repeat: no-repeat;
+    border: 0px;
+    border-radius: 15px;
+    background-position: 50%;
+}
+
+#buttonsRight{
+    margin-left: auto;
+}
+
+#deleteNote{
+    background-image: url(images/bin.png);
+    background-size: 45%;
+}
+
+#saveNote{
+    background-image: url(images/save.svg);
+    background-size: 65%;
+}
+
+#actualNote{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px;
+    min-height: 0;
+    visibility: hidden;
+}
+
+.noteArea{
+    background-color: rgb(185, 185, 185);
+}
+
+.noteArea:focus{
+    border: none;
+    outline: none;
+}
+
+#titleNote{
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 32px;
+    font-weight: bold;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#textAreaNote{
+    flex: 1;
+    min-height: 0;
+    width:100%;
+    box-sizing: border-box;
+    resize: none;
+    overflow-y: auto;
+    border-width: 0px;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*styling for newNote.html*/
